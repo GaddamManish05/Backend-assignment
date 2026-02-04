@@ -1,0 +1,58 @@
+GET http://localhost:3001/user-api/users
+###
+POST http://localhost:3001/user-api/user
+Content-Type: application/json
+
+{
+    "id" : 401,
+    "name" : "manish",
+    "age" : 20
+}
+
+###
+PUT http://localhost:3001/user-api/users/id
+Content-Type: application/json
+
+{
+    "id" : 401,
+    "name" : "Dhanesh",
+    "age" : 20
+}
+
+### 
+GET http://localhost:3001/user-api/users/401
+
+###
+DELETE http://localhost:3001/user-api/users/402
+###
+
+GET http://localhost:3001/product-api/products
+###
+POST http://localhost:3001/product-api/products
+Content-Type: application/json
+
+{
+    "productId" : 400,
+    "name" : "laptop",
+    "price" : 100000,
+    "brand" : "dell"
+}
+
+###
+PUT http://localhost:3001/product-api/products/id
+Content-Type: application/json
+
+{
+    "productId" : 400,
+    "name" : "Laptop",
+    "price" : 20000,
+    "brand" : "samsung"
+}
+
+### 
+GET http://localhost:3001/product-api/products/401
+
+###
+GET http://localhost:3001/product-api/products-brand/samsung
+###
+DELETE http://localhost:3001/product-api/products-delete/400
